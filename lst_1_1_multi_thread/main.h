@@ -3,4 +3,6 @@
 
 #include <iostream>
 
+void hi();
+
 #endif // MAIN_H

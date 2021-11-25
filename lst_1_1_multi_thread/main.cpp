@@ -1,4 +1,5 @@
 #include "main.h"
+#include <thread>
 
 int main(int argc, char *argv[])
 {
@@ -6,5 +7,15 @@ int main(int argc, char *argv[])
         std::cout<<argv[k]<<std::endl;
     }
 
+    std::thread t {hi};
+
+    t.join();
+
+    std::cout << "This is the main thread." << std::endl;
+
     return 0;
+}
+
+void hi() {
+    std::cout << "This is a concurrent thread." << std::endl;
 }
