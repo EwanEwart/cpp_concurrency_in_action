@@ -1,0 +1,30 @@
+GIT
+$ cd project
+$ git init
+$ git status
+$ git add main.cpp
+$ git rm --cached main.pp // remove main.cpp again
+$ git add main.cpp
+$ git add main.*
+$ git commit -m "First commit: A single thread application."
+$ git add PrintClass.*
+$ git rm PrintClass.*
+$ git add *.h *.cpp lst_1_0_single_thread.pro
+$ git status
+$ git add *.h *.cpp lst_1_0_single_thread.pro lst_1_0_single_thread.pro.user
+$ git status
+$ git commit -m "added qt project files"
+$ git status
+$ git add lst_1_0_single_thread.pro.user printcls.cpp printcls.h
+$ git status
+$ git commit -m "added author & ide console output"
+$ git branch
+$ git add lst_1_0_single_thread.pro main.cpp
+$ git status
+$ git commit -m "customer A reverse plug-in"
+$ git status
+$ git checkout -b plug-in-CA // new branch
+$ git branch
+$ git checkout plug-in-CA
+$ git checkout master
+$ git branch
